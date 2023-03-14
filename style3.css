@@ -1,0 +1,191 @@
+/* varaible */
+:root {
+  --white: #ffffff;
+  --dark: #111827;
+  --dark2: #371f1f;
+  --color2: #111827;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ec3030;
+  color: var(--white);
+  /* width: 100%; */
+  max-width: 100% !important;
+}
+img {
+  width: 6%;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  color: white;
+  background-color: #000000;
+}
+nav h1 {
+  font-weight: bold;
+  font-size: 25px;
+}
+nav ul {
+  width: 40%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li a {
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+nav ul li a:hover {
+  background-color: white;
+  color: #000102;
+}
+nav .menu .dropdown {
+  display: none;
+}
+
+nav ul li:hover .dropdown {
+  width: 250px;
+  display: block;
+  background-color: black;
+  position: absolute;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 4px;
+}
+nav .dropdown a{
+  padding: 3px;
+}
+
+b,
+strong,
+i,
+sup,
+sub,
+em {
+  color: var(--color2);
+}
+/* Form */
+.form-container {
+  margin-top: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: var(--dark);
+  border-radius: 30px;
+}
+.form-container h2 {
+  text-align: center;
+}
+form {
+  width: 75%;
+}
+.form-center {
+  display: flex;
+  justify-content: space-around;
+}
+.ttl {
+  max-width: 48% !important;
+}
+#tanggal,
+input[type='number'],
+select {
+  text-align: center;
+}
+.f-space {
+  display: flex;
+  justify-content: space-between;
+}
+.f-number {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.c-row {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--white);
+  color: var(--dark);
+  border-radius: 15px;
+  border: 2px solid var(--color1);
+  margin-top: 5px;
+}
+.c-row {
+  width: 48%;
+}
+.c-row label {
+  width: 85%;
+}
+.c-row input {
+  width: 15%;
+}
+.c-kendaraan {
+  width: 31%;
+}
+input,
+textarea,
+select {
+  border-radius: 10px;
+  border: 2px solid var(--color1);
+  resize: none;
+  cursor: pointer;
+}
+select,
+option {
+  background-color: var(--white);
+}
+input[type='text'],
+input[type='email'],
+input[type='date'],
+input[type='password'] {
+  width: 100%;
+  height: 30px;
+}
+.deskripsi {
+  width: 100%;
+}
+input[type='number'],
+select {
+  height: 30px;
+}
+input[type='submit'] {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  color: var(--white);
+  background-color: var(--red);
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  transform: scale(1, 1);
+  transition: transform 0.3s ease-in-out;
+}
+input[type='submit']:hover {
+  transform: scale(1.1, 1.1);
+}
+/* End Form */

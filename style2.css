@@ -1,0 +1,165 @@
+/* varaible */
+:root {
+  --white: #ffffff;
+  --dark: #111827;
+  --dark2: #1f2937;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ec3030;
+  color: var(--white);
+  /* width: 100%; */
+  max-width: 100% !important;
+}
+img {
+  width: 6%;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 60px;
+  color: white;
+  background-color: #000000;
+}
+nav h1 {
+  font-weight: bold;
+  font-size: 25px;
+}
+nav ul {
+  width: 40%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li a {
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+nav ul li a:hover {
+  background-color: white;
+  color: #000102;
+}
+nav .menu .dropdown {
+  display: none;
+}
+nav ul li:hover .dropdown {
+  width: 250px;
+  display: block;
+  background-color: black;
+  position: absolute;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+nav .dropdown a {
+  padding: 3px;
+}
+
+.logo {
+  color: var(--red);
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+h1,
+h2 {
+  color: var(--black);
+}
+dd {
+  color: var(--white);
+  margin-inline-start: 40px;
+}
+/* Page */
+.page {
+  margin-top: 95px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.tentang {
+  padding-bottom: 2rem;
+  padding-top: 5rem;
+}
+/* End page */
+/* List */
+.list {
+  color: var(--color2);
+}
+.hobi ul {
+  list-style-type: circle;
+}
+li,
+dd,
+dt {
+  font-size: 1.25rem;
+  color: aliceblue;
+}
+/* End list */
+/* Last */
+.last {
+  padding-bottom: 4rem;
+}
+/* Table */
+table,
+tr,
+td,
+th {
+  border: 2px solid var(--white);
+  border-collapse: collapse;
+}
+.res-table {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+}
+table a {
+  color: var(--color2);
+}
+.table-header {
+  background-color: var(--color2) !important;
+  color: var(--white) !important;
+}
+tr:hover {
+  color: var(--dark2) !important;
+  background-color: var(--red) !important;
+}
+tr:nth-child(even) {
+  background-color: var(--dark);
+}
+td {
+  padding: 20px;
+}
+/* End Table */
+/* Other */
+span {
+  color: var(--color1);
+}
+b,
+strong,
+i,
+sup,
+sub,
+em {
+  color: var(--color2);
+}
